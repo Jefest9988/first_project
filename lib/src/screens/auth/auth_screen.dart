@@ -28,7 +28,7 @@ class AuthScreen extends StatelessWidget {
                   vertical: 19, horizontal: 16),
             ),
 
-            const Container(
+            Container(
               height: 1,
               color: Color(0xFFe0E6ED),
               margin: EdgeInsets.symmetric(horizontal: 16),
