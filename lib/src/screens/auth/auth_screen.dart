@@ -29,7 +29,7 @@ class AuthScreen extends StatelessWidget {
               onPressed: () {},
             ),
             CupertinoButton.filled(
-              child: const Text('Зарегестрироваться'),
+              child: const Text('Зарегистрироваться'),
               onPressed: () {},
             ),
           ],
