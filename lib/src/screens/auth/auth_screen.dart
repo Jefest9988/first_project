@@ -32,7 +32,7 @@ class AuthScreen extends StatelessWidget {
               height: 1,
               color: Color(0xFFe0E6ED),
               margin: EdgeInsets.symmetric(horizontal: 16),
-            )
+            ),
             // ignore: prefer_const_constructors
             CupertinoTextField(
               placeholder: 'Пароль',
