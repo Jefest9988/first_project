@@ -1,8 +1,14 @@
 import 'package:flutter/cupertino.dart';
 
-class RegisterScreen extends StatelessWidget {
+class RegisterScreen extends StatefulWidget {
   const RegisterScreen({Key? key}) : super(key: key);
 
+  @override
+  State<RegisterScreen> createState() => _RegisterScreenState();
+}
+
+class _RegisterScreenState extends State<RegisterScreen> {
+  bool obscureText = false;
   @override
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
@@ -54,17 +60,20 @@ class RegisterScreen extends StatelessWidget {
                   margin: EdgeInsets.symmetric(horizontal: 16),
                 ),
                 CupertinoTextField(
-                  obscureText: true,
+                  obscureText: obscureText,
                   placeholder: 'Пароль',
                   padding: const EdgeInsetsDirectional.symmetric(
                       vertical: 20, horizontal: 16),
+                  suffix: CupertinoButton(
+                    child: const Icon(
+                      CupertinoIcons.eye_slash,
+                      color: CupertinoColors.black,
+                    ),
+                    onPressed: () => setState(() => obscureText = !obscureText),
+                  ),
                 ),
-                // const SizedBox(
-                //   height: 327,
-                // ),
               ],
             ),
-            //  Spacer(),
             Padding(
               padding: const EdgeInsets.only(left: 16, right: 16, bottom: 20),
               child: CupertinoButton(
