@@ -20,6 +20,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
       ),
       child: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Column(
